@@ -1,0 +1,103 @@
+.body {
+  background-color: rgb(177, 145, 145);
+}
+.form {
+  display: block;
+  flex-direction: column;
+  column-width: auto auto;
+  align-items: stretch;
+  gap: 10px;
+  justify-content: space-between;
+}
+.name-inputs {
+  display: flex;
+  padding: 10px;
+}
+.name-inputs2 {
+  padding: 10px;
+}
+.lab {
+  margin-left: 50px;
+}
+#firstName {
+  margin-left: 30px;
+  width: 250px;
+  border: none;
+  background-color: azure;
+}
+#lastName {
+  margin-left: 5px;
+  padding: 8px;
+  width: 288px;
+  border: none;
+  background-color: azure;
+}
+#email {
+  margin-left: 5px;
+  width: 50%;
+  padding: 8px;
+  border: none;
+  background-color: azure;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: slategray;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.btn button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 50px;
+}
+.stars {
+  padding: 20px;
+  font-size: 30px;
+  margin-left: 35px;
+}

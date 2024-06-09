@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body class="body">
+    <header>
+      <h1>Savannah Woods Hotel</h1>
+    </header>
+    <section>
+      <div class="form">
+        <form>
+          <div class="name-inputs">
+            <label> First Name </label>
+            <input type="text" plaeholder="First Name" id="firstName" />
+            <label class="lab"> Last Name </label>
+            <input type="text" plaeholder="Last Name" id="lastName" />
+          </div>
+          <div class="name-inputs2">
+            <label>Email Address </label>
+            <input type="email" plaeholder="Enter your email" id="email" />
+          </div>
+        </form>
+      </div>
+
+      <h2>How was your overall experience</h2>
+      <div class="stars">
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+      </div>
+      <div class="checks">
+        <h3>What did you like about Savannah Woods</h3>
+        <div class="checkbox">
+          <label class="container"
+            >Ambience
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Food
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Hospitality
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Cool Breeze
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"
+            >Other
+            <input type="checkbox" checked="checked" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button>Submit Feedback</button>
+      </div>
+    </section>
+  </body>
+</html>
